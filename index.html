@@ -1,0 +1,224 @@
+<html lang="en">
+<meta charset="UTF-8" <meta="" name="viewport" content="width=device-width, initial-scale=1.0">
+<title> FCC Museum Survey Page </title>
+<!-- Stylesheet-->
+<link rel="stylesheet" href="style.css">
+<!-- Font -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+</style>
+
+<!-- Body -->
+<div class="container">
+  <header class="header">
+    <h1 id="title"> 
+      Museum Visit Survey
+    </h1>
+    
+    <p class="description" id="description">
+      Tell us about your experience today!
+    </p>
+  </header>
+
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">
+     Name
+    <span class="optional"> * </span>
+    </label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-input"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+  
+  <div class="form-group">
+    <label id="email-label" for="email">
+      Email
+      <span class="optional"> * </span>
+    </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-input"
+        placeholder="name@email.com"
+        required
+       />
+  </div>
+  
+  <div class="form-group">
+    <label class="age" id="number-label" for="number">
+      Age <span class="optional"> (optional) </span>
+    </label>
+    
+    <input 
+      type="number"
+      name="age"
+      id="number"
+      class="form-input"
+      min="13"
+      max="100"
+      placeholder="Age"
+      required
+     />
+    
+    <div class="form-group">
+      <p>
+        How often do you visit this museum?
+      </p>
+      
+      <select 
+         class="form-input"
+         id="dropdown"
+         name="visits"
+         required
+      >
+      
+      <option disabled selected value>Select</option>
+      
+      <option value="rarely">
+        Rarely
+      </option>
+        
+      <option value="once">
+        Once or twice
+      </option>
+      
+      <option value="year">
+        A few times per year
+      </option>
+      
+      <option value="month">
+        Monthly
+      </option>
+      
+      <option value="week">
+        Weekly
+      </option>
+      
+      <option value="other">
+        This is my second home!
+      </option>
+     </select>
+    </div>
+    
+    <div class="form-group">
+      <p class="favorite">
+        What is your <strong> favorite </strong> part about the museum?
+      </p>
+    </div>
+    
+    <label>
+    <input 
+         class="input-checkbox"
+         type="checkbox"
+         value="Modern-Art-Exhibit"
+         name="favorite"
+     />
+      Modern Art Exhibit
+    </label>
+    
+    <label>
+    <input 
+         class="input-checkbox"
+         type="checkbox"
+         value="Classical-Art-Exhibit"
+         name="favorite"
+     />
+      Classical Art Exhibit
+    </label>
+ 
+    <label>
+    <input 
+         class="input-checkbox"
+         type="checkbox"
+         value="American-Art-Exhibit"
+         name="favorite"
+     />
+      American Art Exhibit
+    </label>
+    
+    <label>
+    <input 
+         class="input-checkbox"
+         type="checkbox"
+         value="weekly-art-activity"
+         name="favorite"
+     />
+      Weekly Art Activities
+    </label>    
+    
+    <label>
+    <input 
+         class="input-checkbox"
+         type="checkbox"
+         value="music-events"
+         name="favorite"
+     />
+      Local Music Nights
+    </label>    
+    </div>
+  
+  <div class="form-group">
+    <p class="recommend">
+      Would you recommend our museum to a friend?
+    </p>
+    
+    <label class="recommend">
+    <input 
+      class="input-radio"
+      type="radio"
+      value="definitely"
+      name="recommend"
+    />
+      Definitely
+    </label>
+    
+    <label class="recommend">
+    <input 
+      class="input-radio"
+      type="radio"
+      value="maybe"
+      name="recommend"
+    />
+      Maybe
+    </label>
+   
+     <label class="recommend">
+    <input
+      class="input-radio"
+      type="radio"
+      value="nope"
+      name="recommend"
+    />
+      Nope
+    </label>
+  </div>
+  
+    <div class="form-group">
+      <p>Tell us what you think!</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Leave any additional comments or suggestions here..."
+      ></textarea>
+    </div>
+  
+  
+  <div class="form-group">
+    <button
+       type="submit"
+       id="submit"
+       class="submit-button"
+    >
+      Submit
+    </button>
+  </div>
+</form>
+</div>
